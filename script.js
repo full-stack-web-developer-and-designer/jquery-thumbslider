@@ -8,11 +8,6 @@ $(document).ready(function(){
 		positions[i] = totalWidth;
 		totalWidth += $(this).width();
 		
-		// Check widths
-		if(!$(this).width()){
-			alert('Please add a width to your images');
-			return false;
-		}
 	});
 	
 	// Set width
