@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive jQuery thumbslider of professional Web Developer and Web Designer Mirnes Glamočić from Bosnia and Herzegovina. For more info please visit mirnesglamocic.com">
+    <title>jQuery Thumbslider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="./script.js"></script>
+    <!-- page reload if the user changes mobile orientation -->
+    <script>
+        window.onorientationchange=function(){var a=window.orientation;switch(a){case 0:case 90:case -90:window.location.reload()}};
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="slider">
+            <header>
+                <h3>jQuery Thumbslider</h3>
+            </header>
+            <div id="slides">
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="img/slides/device-comp-900.jpg">
+                        <source media="(min-width:601px)" srcset="img/slides/device-comp-767.jpg">
+                        <source media="(min-width:501px)" srcset="img/slides/device-comp-600.jpg">
+                        <source media="(min-width:451px)" srcset="img/slides/device-comp-500.jpg">
+                        <source media="(min-width:409px)" srcset="img/slides/device-comp-450.jpg">
+                        <source media="(min-width:321px)" srcset="img/slides/device-comp-408.jpg">
+                        <source media="(max-width:320px)" srcset="img/slides/device-comp-320.jpg">
+                        <img src="img/slides/device-comp-900.jpg" alt="device comp" style="width:auto;">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="img/slides/device-laptop-900.jpg">
+                        <source media="(min-width:601px)" srcset="img/slides/device-laptop-767.jpg">
+                        <source media="(min-width:501px)" srcset="img/slides/device-laptop-600.jpg">
+                        <source media="(min-width:451px)" srcset="img/slides/device-laptop-500.jpg">
+                        <source media="(min-width:409px)" srcset="img/slides/device-laptop-450.jpg">
+                        <source media="(min-width:321px)" srcset="img/slides/device-laptop-408.jpg">
+                        <source media="(max-width:320px)" srcset="img/slides/device-laptop-320.jpg">
+                        <img src="img/slides/device-laptop-900.jpg" alt="device laptop" style="width:auto;">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="img/slides/device-tablet-900.jpg">
+                        <source media="(min-width:601px)" srcset="img/slides/device-tablet-767.jpg">
+                        <source media="(min-width:501px)" srcset="img/slides/device-tablet-600.jpg">
+                        <source media="(min-width:451px)" srcset="img/slides/device-tablet-500.jpg">
+                        <source media="(min-width:409px)" srcset="img/slides/device-tablet-450.jpg">
+                        <source media="(min-width:321px)" srcset="img/slides/device-tablet-408.jpg">
+                        <source media="(max-width:320px)" srcset="img/slides/device-tablet-320.jpg">
+                        <img src="img/slides/device-tablet-900.jpg" alt="device tablet" style="width:auto;">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="img/slides/device-phone-900.jpg">
+                        <source media="(min-width:601px)" srcset="img/slides/device-phone-767.jpg">
+                        <source media="(min-width:501px)" srcset="img/slides/device-phone-600.jpg">
+                        <source media="(min-width:451px)" srcset="img/slides/device-phone-500.jpg">
+                        <source media="(min-width:409px)" srcset="img/slides/device-phone-450.jpg">
+                        <source media="(min-width:321px)" srcset="img/slides/device-phone-408.jpg">
+                        <source media="(max-width:320px)" srcset="img/slides/device-phone-320.jpg">
+                        <img src="img/slides/device-phone-900.jpg" alt="device phone" style="width:auto;">
+                    </picture>
+                </div>
+            </div>
+                <nav id="menu">
+                    <ul>
+                        <li class="sep"></li>
+                        <li class="product">
+                            <a href="">
+                                <img src="img/slides/device-comp-thumb.jpg" alt="thumbnail">
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <img src="img/slides/device-laptop-thumb.jpg" alt="thumbnail">
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <img src="img/slides/device-tablet-thumb.jpg" alt="thumbnail">
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <img src="img/slides/device-phone-thumb.jpg" alt="thumbnail">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+    <!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a href="https://mirnesglamocic.com" target="_blank" >Mirnes Glamočić</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Follow me on</h4>
+		<ul>
+			<li>
+				<a href="https://www.linkedin.com/in/mirnesglamocic" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/full-stack-web-developer-and-designer" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://codepen.io/full-stack-web-developer-and-designer" target="_blank">
+					<i class="fab fa-codepen"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Follow Me
+</button>
+</body>
+</html>
