@@ -223,15 +223,6 @@ a img {
 	color: #043981;
 	box-shadow: 0 9px 12px -9px #043981;
 }
-.social-icon:hover {
-    color: #363636;
-    background: #fff;
-}
-.social-icon:hover #linkedin,
-.social-icon:hover #github,
-.social-icon:hover #twitter{
-  fill: #363636;
-}
 .floating-btn {
 	-webkit-border-radius: 26.5px; /* Chrome 4.0 and Safari 3.1 */
 	-moz-border-radius: 26.5px; /* Mozilla 3.0 */
